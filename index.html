@@ -1,0 +1,1728 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Separation Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HOME PAGE
+    ========================== -->
+
+    <div id="homePage">
+
+        <h1>THE SEPARATION LAB</h1>
+
+        <h2>Can you separate every mixture?</h2>
+
+        <p>
+            Welcome to the laboratory.
+            Your mission is to master 10 separation techniques.
+        </p>
+
+        <button type="button" id="enterLab">
+            ENTER THE LAB
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         LAB MAP
+    ========================== -->
+
+    <div id="labMap" style="display: none;">
+
+        <h1>🧪 LAB MAP</h1>
+
+        <p>Select a separation technique to begin your investigation.</p>
+
+        <div class="stations">
+
+            <button type="button" id="handPicking">
+                01<br>
+                <span>HAND-PICKING</span>
+            </button>
+
+            <button type="button" id="sieving">
+                02<br>
+                <span>SIEVING</span>
+            </button>
+
+            <button type="button" id="filtration">
+                03<br>
+                <span>FILTRATION</span>
+            </button>
+
+            <button type="button" id="evaporation">
+                04<br>
+               <span>EVAPORATION</span>
+            </button>
+
+           <button type="button" id="crystallization">
+    05<br>
+    <span>CRYSTALLIZATION</span>
+</button>
+           <button type="button" id="simpleDistillation">
+    06<br>
+    <span>SIMPLE DISTILLATION</span>
+</button>
+                <button type="button" id="fractionalDistillation">
+    07<br>
+    <span>FRACTIONAL DISTILLATION</span>
+</button> 
+           <button id="separatingFunnel">
+   08<br>
+    <span>SEPARATING FUNNEL</span>
+</button>
+    <button id="chromatography">
+    09<br>
+    <span>CHROMATOGRAPHY</span>
+</button>
+
+<button id="centrifugation">
+    10<br>
+    <span>CENTRIFUGATION</span>
+</button>            
+
+
+</div>
+
+    </div>
+
+
+    <!-- =========================
+         STATION 01 — HAND-PICKING
+    ========================== -->
+
+    <div id="handPickingLab" style="display: none;">
+
+        <h1>HAND-PICKING</h1>
+
+        <h2>INVESTIGATION 01</h2>
+
+        <p>
+            Separate a mixture of rice and small stones.
+        </p>
+
+        <h2>WHAT IS HAND-PICKING?</h2>
+
+        <p>
+            Hand-picking is a separation technique used to remove
+            visible solid particles from a mixture by using your hands.
+        </p>
+
+        <h2>THE MIXTURE</h2>
+
+        <div class="mixture">
+
+            <div class="rice">🍚 🍚 🍚 🍚</div>
+
+            <div class="stones">🪨 🪨 🪨</div>
+
+        </div>
+
+        <p>
+            Rice + small stones
+        </p>
+
+
+        <h2>HOW DOES IT WORK?</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <h3>01 — OBSERVE</h3>
+                <p>
+                    Look carefully at the mixture and identify
+                    the different materials.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>02 — IDENTIFY</h3>
+                <p>
+                    Find the stones because they are visibly
+                    different from the rice.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>03 — PICK</h3>
+                <p>
+                    Use your fingers to remove the stones
+                    from the mixture.
+                </p>
+            </div>
+
+        </div>
+
+
+        <h2>APPARATUS</h2>
+
+        <div class="apparatus">
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">✋</div>
+
+                <h3>HANDS</h3>
+
+                <p>
+                    Used to pick the unwanted stones
+                    from the mixture.
+                </p>
+
+            </div>
+
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">▱</div>
+
+                <h3>TRAY</h3>
+
+                <p>
+                    Holds the mixture while it is
+                    being separated.
+                </p>
+
+            </div>
+
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">○</div>
+
+                <h3>CONTAINER</h3>
+
+                <p>
+                    Can be used to collect the
+                    separated stones.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="apparatus-note">
+            used when the unwanted components is in small quantities and large enough to be seen.
+        </p>
+
+
+        <h2>RESULT</h2>
+
+        <div class="result-box">
+
+            <div>
+
+                <h3>BEFORE</h3>
+
+                <p>
+                    Rice + stones
+                </p>
+
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <div>
+
+                <h3>AFTER</h3>
+
+                <p>
+                    Rice | Stones
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            The rice and stones have been separated into their
+            individual components without changing their identities.
+        </p>
+
+
+        <h2>YOUR CHALLENGE</h2>
+
+        <p>
+            Which method should you use to separate rice
+            and small stones?
+        </p>
+
+
+        <button type="button" id="handPickAnswer">
+            HAND-PICKING
+        </button>
+
+        <button type="button" id="wrongAnswer">
+            FILTRATION
+        </button>
+
+
+        <p id="result"></p>
+
+
+        <div id="missionComplete" style="display: none;">
+
+            <h2>MISSION COMPLETE</h2>
+
+            <p>
+                You successfully separated the rice and stones
+                using hand-picking.
+            </p>
+
+            <p>
+                Separation technique mastered:
+                <strong>HAND-PICKING</strong>
+            </p>
+
+            <button type="button" id="backToMap">
+                RETURN TO LAB MAP
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         STATION 02 — SIEVING
+    ========================== -->
+
+    <div id="sievingLab" style="display: none;">
+
+        <h1>SIEVING</h1>
+
+        <h2>INVESTIGATION 02</h2>
+ 
+        <p>
+            Separate a mixture of sand and gravel.
+        </p>
+           
+         <h2> WHAT IS SIEVING<h2/>
+
+        <p> Sieving is a technique used to remove smaller soild particles from larger particles <p>
+       
+
+         <h2>THE MIXTURE</h2>
+
+        <div class="mixture">
+
+            <div class="sand">
+                🏖️ 🏖️ 🏖️ 🏖️
+            </div>
+
+            <div class="gravel">
+                🪨 🪨 🪨
+            </div>
+
+        </div>
+
+        <p>
+            Sand + gravel
+        </p>
+
+
+        <h2>HOW DOES IT WORK?</h2>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <h3>01 — PLACE</h3>
+
+                <p>
+                    Place the mixture into a sieve
+                    with suitable-sized holes.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <h3>02 — SHAKE</h3>
+
+                <p>
+                    Shake the sieve so the smaller
+                    sand particles pass through the holes.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <h3>03 — COLLECT</h3>
+
+                <p>
+                    The larger gravel particles remain
+                    in the sieve while the sand falls through.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h2>APPARATUS</h2>
+
+        <div class="apparatus">
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">🔲</div>
+
+                <h3>SIEVE</h3>
+
+                <p>
+                    Allows smaller particles to pass through
+                    while retaining larger particles.
+                </p>
+
+            </div>
+
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">🥣</div>
+
+                <h3>CONTAINER</h3>
+
+                <p>
+                    Collects the material that passes
+                    through the sieve.
+                </p>
+
+            </div>
+
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">🪨</div>
+
+                <h3>GRAVEL</h3>
+
+                <p>
+                    The larger particles remain on the sieve.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="apparatus-note">
+            The sieve separates the mixture based on particle size.
+        </p>
+
+
+        <h2>RESULT</h2>
+
+        <div class="result-box">
+
+            <div>
+
+                <h3>BEFORE</h3>
+
+                <p>
+                    Sand + gravel
+                </p>
+
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <div>
+
+                <h3>AFTER</h3>
+
+                <p>
+                    Sand | Gravel
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            The smaller sand particles pass through the holes
+            of the sieve, while the larger gravel particles remain behind.
+        </p>
+
+
+        <h2>YOUR CHALLENGE</h2>
+
+        <p>
+            Which method should you use to separate sand and gravel?
+        </p>
+
+
+        <button type="button" id="sievingAnswer">
+            SIEVING
+        </button>
+
+        <button type="button" id="sievingWrongAnswer">
+            FILTRATION
+        </button>
+
+
+        <p id="sievingResult"></p>
+
+
+        <div id="sievingMissionComplete" style="display: none;">
+
+            <h2>MISSION COMPLETE</h2>
+
+            <p>
+                You successfully separated the sand and gravel
+                using sieving.
+            </p>
+
+            <p>
+                Separation technique mastered:
+                <strong>SIEVING</strong>
+            </p>
+
+            <button type="button" id="sievingBackToMap">
+                RETURN TO LAB MAP
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         STATION 03 — FILTRATION
+    ========================== -->
+
+    <div id="filtrationLab" style="display: none;">
+
+        <h1>FILTRATION</h1>
+
+        <h2>INVESTIGATION 03</h2>
+
+        <p>
+            Separate a mixture of sand and water.
+        </p>
+
+     <h2> WHAT IS FLITRATION<h2/>
+
+<p> Filtration is a technique used to seperate soild particles from a liquid or gas by passing through tiny holes or barriers <p>
+       
+           <h2>THE MIXTURE</h2>
+
+        <div class="mixture">
+
+            <div class="sand">
+                🏖️ 🏖️ 🏖️ 🏖️
+            </div>
+
+            <div class="water">
+                💧 💧 💧
+            </div>
+
+        </div>
+
+        <p>
+            Sand + water
+        </p>
+
+
+        <h2>HOW DOES IT WORK?</h2>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <h3>01 — POUR</h3>
+
+                <p>
+                    Pour the sand and water mixture into
+                    a filter funnel containing filter paper.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <h3>02 — FILTER</h3>
+
+                <p>
+                    The water passes through the tiny pores
+                    in the filter paper while the sand is trapped.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <h3>03 — COLLECT</h3>
+
+                <p>
+                    The water collects in the container below,
+                    while the sand remains on the filter paper.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h2>APPARATUS</h2>
+
+        <div class="apparatus">
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">🔻</div>
+
+                <h3>FILTER FUNNEL</h3>
+
+                <p>
+                    Holds the filter paper and directs
+                    the liquid into the container.
+                </p>
+
+            </div>
+
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">📄</div>
+
+                <h3>FILTER PAPER</h3>
+
+                <p>
+                    Traps the insoluble sand while allowing
+                    the water to pass through.
+                </p>
+
+            </div>
+
+
+            <div class="apparatus-item">
+
+                <div class="apparatus-icon">🧪</div>
+
+                <h3>BEAKER</h3>
+
+                <p>
+                    Collects the water that passes
+                    through the filter paper.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="apparatus-note">
+            Filtration separates an insoluble solid from a liquid.
+        </p>
+
+
+        <h2>RESULT</h2>
+
+        <div class="result-box">
+
+            <div>
+
+                <h3>BEFORE</h3>
+
+                <p>
+                    Sand + water
+                </p>
+
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <div>
+
+                <h3>AFTER</h3>
+
+                <p>
+                    Sand | Water
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            The sand is trapped by the filter paper,
+            while the water passes through and is collected
+            in the container below.
+        </p>
+
+
+        <h2>YOUR CHALLENGE</h2>
+
+        <p>
+            Which method should you use to separate sand and water?
+        </p>
+
+
+        <button type="button" id="filtrationAnswer">
+            FILTRATION
+        </button>
+
+        <button type="button" id="filtrationWrongAnswer">
+            SIEVING
+        </button>
+
+
+        <p id="filtrationResult"></p>
+
+
+        <div id="filtrationMissionComplete" style="display: none;">
+
+            <h2>MISSION COMPLETE</h2>
+
+            <p>
+                You successfully separated the sand and water
+                using filtration.
+            </p>
+
+            <p>
+                Separation technique mastered:
+                <strong>FILTRATION</strong>
+            </p>
+
+            <button type="button" id="filtrationBackToMap">
+                RETURN TO LAB MAP
+            </button>
+
+        </div>
+
+    </div>
+<!-- =========================
+     STATION 04 — EVAPORATION
+========================== -->
+
+<div id="evaporationLab" style="display: none;">
+
+    <h1>EVAPORATION</h1>
+
+    <h2>INVESTIGATION 04</h2>
+
+    <p>
+        Separate salt from salt water.
+    </p>
+ 
+<h2> WHAT IS EVAPORATION <h2/>
+
+<p> Evaporation is technique used to separate a dissolved solid from a liquid useing heat until turned into a gas <p>
+
+    <h2>THE MIXTURE</h2>
+
+    <div class="mixture">
+
+        <div class="salt">
+            🧂 🧂 🧂
+        </div>
+
+        <div class="water">
+            💧 💧 💧
+        </div>
+
+    </div>
+
+    <p>
+        Salt + water
+    </p>
+
+    <h2>HOW DOES IT WORK?</h2>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <h3>01 — HEAT</h3>
+
+            <p>
+                Heat the salt solution so that
+                the water begins to evaporate.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>02 — EVAPORATE</h3>
+
+            <p>
+                The water changes from a liquid into
+                water vapour and leaves the solution.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>03 — REMAIN</h3>
+
+            <p>
+                The salt does not evaporate under
+                these conditions, so it remains behind.
+            </p>
+
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+
+            <div class="apparatus-icon">🥣</div>
+
+            <h3>EVAPORATING BASIN</h3>
+
+            <p>
+                Holds the salt solution while
+                the water evaporates.
+            </p>
+
+        </div>
+
+        <div class="apparatus-item">
+
+            <div class="apparatus-icon">🔥</div>
+
+            <h3>HEAT SOURCE</h3>
+
+            <p>
+                Provides heat energy to speed
+                up evaporation.
+            </p>
+
+        </div>
+
+        <div class="apparatus-item">
+
+            <div class="apparatus-icon">🧪</div>
+
+            <h3>TRIPOD &amp; GAUZE</h3>
+
+            <p>
+                Supports the evaporating basin
+                above the heat source.
+            </p>
+
+        </div>
+
+    </div>
+
+    <p class="apparatus-note">
+        Evaporation is used to recover a dissolved
+        solid from a solution.
+    </p>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+
+        <div>
+            <h3>BEFORE</h3>
+            <p>Salt + water</p>
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Salt | Water vapour</p>
+        </div>
+
+    </div>
+
+    <p>
+        The water evaporates and leaves the solution,
+        while the dissolved salt remains behind
+        in the evaporating basin.
+    </p>
+
+    <h2>YOUR CHALLENGE</h2>
+
+    <p>
+        Which method should you use to separate salt
+        from salt water when you want to recover the salt?
+    </p>
+
+    <button type="button" id="evaporationAnswer">
+        EVAPORATION
+    </button>
+
+    <button type="button" id="evaporationWrongAnswer">
+        FILTRATION
+    </button>
+
+    <p id="evaporationResult"></p>
+
+    <div id="evaporationMissionComplete" style="display: none;">
+
+        <h2>MISSION COMPLETE</h2>
+
+        <p>
+            You successfully recovered the salt
+            from the salt solution using evaporation.
+        </p>
+
+        <p>
+            Separation technique mastered:
+            <strong>EVAPORATION</strong>
+        </p>
+
+        <button type="button" id="evaporationBackToMap">
+            RETURN TO LAB MAP
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     STATION 05 — CRYSTALLIZATION
+========================== -->
+
+<div id="crystallizationLab" style="display: none;">
+
+    <h1>STATION 05</h1>
+
+    <h2>CRYSTALLIZATION</h2>
+ 
+
+<h2> WHAT IS CRYSTALLIZATION <h2/>
+
+    <p>
+        Crystallization is a technique that is used to separate a dissolved solid from a solution
+        by forming solid crystals.
+    </p>
+
+    <div class="mixture">
+        💧 + 🍬
+    </div>
+
+    <h2>MIXTURE</h2>
+
+    <p>
+        Sugar dissolved in water
+    </p>
+
+    <h2>HOW DOES IT WORK?</h2>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <h3>01 — CONCENTRATE</h3>
+
+            <p>
+                The solution becomes more concentrated as some of
+                the solvent is removed.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>02 — COOL</h3>
+
+            <p>
+                As the concentrated solution cools, crystals begin
+                to form.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>03 — COLLECT</h3>
+
+            <p>
+                The crystals are separated from the remaining liquid.
+            </p>
+
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+
+            <div class="apparatus-icon">🥣</div>
+
+            <h3>EVAPORATING DISH</h3>
+
+            <p>
+                Holds the solution while it becomes concentrated.
+            </p>
+
+        </div>
+
+        <div class="apparatus-item">
+
+            <div class="apparatus-icon">🧪</div>
+
+            <h3>BEAKER</h3>
+
+            <p>
+                Can hold the solution during the crystallization process.
+            </p>
+
+        </div>
+
+        <div class="apparatus-item">
+
+            <div class="apparatus-icon">🥢</div>
+
+            <h3>GLASS ROD</h3>
+
+            <p>
+                Used to stir the solution when appropriate.
+            </p>
+
+        </div>
+
+    </div>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+
+        <div>
+            <h3>BEFORE</h3>
+            <p>Sugar solution</p>
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Sugar crystals + remaining solution</p>
+        </div>
+
+    </div>
+<b>
+<p> Used for heat sensitive substances that migt decompose during evaportaion.<p.
+</b>
+    <h2>MISSION</h2>
+
+    <p>
+        Which technique is used to obtain crystals
+        of a dissolved solid?
+    </p>
+
+    <button type="button" id="crystallizationAnswer">
+        CRYSTALLIZATION
+    </button>
+
+    <button type="button" id="crystallizationWrongAnswer">
+        FILTRATION
+    </button>
+
+    <p id="crystallizationResult"></p>
+
+    <div id="crystallizationMissionComplete" style="display: none;">
+
+        <h2>MISSION COMPLETE</h2>
+
+        <p>
+            You successfully obtained crystals
+            from the solution.
+        </p>
+
+        <p>
+            Separation technique mastered:
+            <strong>CRYSTALLIZATION</strong>
+        </p>
+
+        <button type="button" id="crystallizationBackToMap">
+            RETURN TO LAB MAP
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<div id="simpleDistillationLab" style="display: none;">
+
+    <h1>STATION 06</h1>
+    <h2>SIMPLE DISTILLATION</h2>
+
+    <p>
+        Simple distillation separates a solvent from a solution
+        by using differences in boiling points.
+    </p>
+
+    <div class="mixture">
+        💧 + 🧂
+    </div>
+
+    <h2>MIXTURE</h2>
+    <p>Salt dissolved in water</p>
+
+    <h2>HOW IT WORKS</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>01 — HEAT</h3>
+            <p>
+                The solution is heated and the liquid with the lower
+                boiling point changes into a vapour.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>02 — COOL</h3>
+            <p>
+                The vapour passes into a cooler part of the apparatus
+                and condenses back into a liquid.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>03 — COLLECT</h3>
+            <p>
+                The condensed liquid is collected separately from
+                the substance that remains behind.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🧪</div>
+            <h3>Distillation Flask</h3>
+            <p>Holds the mixture being separated.</p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🌡️</div>
+            <h3>Thermometer</h3>
+            <p>Measures the temperature of the vapour.</p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">❄️</div>
+            <h3>Condenser</h3>
+            <p>Cools the vapour so that it condenses into a liquid.</p>
+        </div>
+
+    </div>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+        <div>
+            <h3>BEFORE</h3>
+            <p>Salt solution</p>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Water collected + salt remains behind</p>
+        </div>
+    </div>
+
+    <h2>MISSION</h2>
+    <p>
+        Which technique can be used to obtain water from a salt solution?
+    </p>
+
+    <button type="button" id="simpleDistillationAnswer">
+        SIMPLE DISTILLATION
+    </button>
+
+    <button type="button" id="simpleDistillationWrongAnswer">
+        SIEVING
+    </button>
+
+    <p id="simpleDistillationResult"></p>
+
+    <div id="simpleDistillationMissionComplete" style="display: none;">
+        <h2>MISSION COMPLETE</h2>
+
+        <button type="button" id="simpleDistillationBackToMap">
+            BACK TO LAB MAP
+        </button>
+    </div>
+</div>
+    
+<!-- =========================
+     STATION 07 — FRACTIONAL DISTILLATION
+========================== -->
+
+<div id="fractionalDistillationLab" style="display: none;">
+
+    <h1>STATION 07</h1>
+    <h2>FRACTIONAL DISTILLATION</h2>
+
+<h2>WHAT IS FRACTIONAL DISTILLATION</h2>
+   
+
+ <p>
+        Fractional distillation is a technique used to separate a mixture of liquids
+        with different boiling points.
+    </p>
+
+    <div class="mixture">
+        🧪 + 🧪
+    </div>
+
+    <h2>MIXTURE</h2>
+    <p>Two miscible liquids with different boiling points</p>
+
+    <h2>HOW IT WORKS</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>01 — HEAT</h3>
+            <p>
+                The mixture is heated and the liquids begin to
+                form vapour at different temperatures.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>02 — FRACTIONATING COLUMN</h3>
+            <p>
+                The vapours pass through a fractionating column,
+                allowing repeated vaporisation and condensation.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>03 — COLLECT</h3>
+            <p>
+                The liquid with the lower boiling point is collected
+                before the liquid with the higher boiling point.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🧪</div>
+            <h3>Distillation Flask</h3>
+            <p>Holds the mixture being separated.</p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🏛️</div>
+            <h3>Fractionating Column</h3>
+            <p>
+                Provides surfaces for repeated vaporisation
+                and condensation.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">❄️</div>
+            <h3>Condenser</h3>
+            <p>
+                Cools vapour and changes it back into a liquid.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+        <div>
+            <h3>BEFORE</h3>
+            <p>Mixture of miscible liquids</p>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Liquids collected separately</p>
+        </div>
+ <b>   </div>
+<p> Used for crud oil refining or liquid air separation.<p>
+    <h2>MISSION</h2>
+</b>
+   
+ <p>
+        Which technique is used to separate miscible liquids
+        with different boiling points?
+    </p>
+
+    <button type="button" id="fractionalDistillationAnswer">
+        FRACTIONAL DISTILLATION
+    </button>
+
+    <button type="button" id="fractionalDistillationWrongAnswer">
+        FILTRATION
+    </button>
+
+    <p id="fractionalDistillationResult"></p>
+
+    <div id="fractionalDistillationMissionComplete" style="display: none;">
+
+        <h2>MISSION COMPLETE</h2>
+
+        <button type="button" id="fractionalDistillationBackToMap">
+            BACK TO LAB MAP
+        </button>
+
+    </div>
+
+</div>
+<!-- =========================
+     STATION 08 — SEPARATING FUNNEL
+========================== -->
+
+<div id="separatingFunnelLab" style="display: none;">
+
+    <h1>STATION 08</h1>
+    <h2>SEPARATING FUNNEL</h2>
+
+<h2>WHAT IS SEPARATING FUNNEL</h2>
+    <p>
+        Separating funnel is a technique used to separate two
+        immiscible liquids that do not mix.
+    </p>
+
+    <div class="mixture">
+        💧 + 🛢️
+    </div>
+
+    <h2>MIXTURE</h2>
+    <p>Two immiscible liquids with different densities</p>
+
+    <h2>HOW IT WORKS</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>01 — ALLOW TO SETTLE</h3>
+            <p>
+                The mixture is left undisturbed so the
+                two liquids form separate layers.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>02 — OPEN THE TAP</h3>
+            <p>
+                The denser liquid at the bottom is allowed
+                to flow out through the tap.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>03 — SEPARATE</h3>
+            <p>
+                The liquids are collected separately.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">⚗️</div>
+            <h3>Separating Funnel</h3>
+            <p>
+                Holds the two immiscible liquids and
+                allows them to be separated.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🔘</div>
+            <h3>Stopcock</h3>
+            <p>
+                Controls the flow of the liquid from
+                the separating funnel.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🧪</div>
+            <h3>Beaker</h3>
+            <p>
+                Collects the liquid flowing from
+                the funnel.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+
+        <div>
+            <h3>BEFORE</h3>
+            <p>Two immiscible liquids</p>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Liquids separated into different containers</p>
+        </div>
+
+    </div>
+<b>
+<p> Used for oil and water mixtures. <p>
+</b>    <h2>MISSION</h2>
+
+    <p>
+        Which technique is used to separate two
+        immiscible liquids?
+    </p>
+
+    <button type="button" id="separatingFunnelAnswer">
+        SEPARATING FUNNEL
+    </button>
+
+    <button type="button" id="separatingFunnelWrongAnswer">
+        FILTRATION
+    </button>
+
+    <p id="separatingFunnelResult"></p>
+
+    <div id="separatingFunnelMissionComplete" style="display: none;">
+
+        <h2>MISSION COMPLETE</h2>
+
+        <button type="button" id="separatingFunnelBackToMap">
+            BACK TO LAB MAP
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     STATION 09 — CHROMATOGRAPHY
+========================== -->
+
+<div id="chromatographyLab" style="display: none;">
+
+    <h1>STATION 09</h1>
+    <h2>CHROMATOGRAPHY</h2>
+
+<h2>WHAT IS CHROMATOGRAPHY?</h2>
+    <p>
+        Chromatography is a technique used to separate and identify
+        different substances in a mixture into individual parts.
+    </p>
+
+    <div class="mixture">
+        🖊️ + 💧
+    </div>
+
+    <h2>MIXTURE</h2>
+    <p>Different dyes or pigments in a coloured ink</p>
+
+    <h2>HOW IT WORKS</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>01 — SPOT</h3>
+            <p>
+                A small spot of the mixture is placed
+                near the bottom of the paper.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>02 — SOLVENT MOVES</h3>
+            <p>
+                The solvent moves up the paper and
+                carries the substances with it.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>03 — SEPARATE</h3>
+            <p>
+                Different substances travel different
+                distances, forming separate spots.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">📄</div>
+            <h3>Chromatography Paper</h3>
+            <p>
+                Provides the surface on which the
+                substances separate.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">💧</div>
+            <h3>Solvent</h3>
+            <p>
+                Moves up the paper and carries the
+                substances in the mixture.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🧪</div>
+            <h3>Beaker</h3>
+            <p>
+                Holds the solvent and chromatography
+                paper.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+
+        <div>
+            <h3>BEFORE</h3>
+            <p>Mixture of different dyes</p>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Separate coloured spots</p>
+        </div>
+
+    </div>
+<b>
+<p> Used for dyes, link and amiono inks.<p>
+</b>
+    <h2>MISSION</h2>
+
+    <p>
+        Which technique can be used to separate the
+        different dyes present in ink?
+    </p>
+
+    <button type="button" id="chromatographyAnswer">
+        CHROMATOGRAPHY
+    </button>
+
+    <button type="button" id="chromatographyWrongAnswer">
+        SIEVING
+    </button>
+
+    <p id="chromatographyResult"></p>
+
+    <div id="chromatographyMissionComplete" style="display: none;">
+
+        <h2>MISSION COMPLETE</h2>
+
+        <button type="button" id="chromatographyBackToMap">
+            BACK TO LAB MAP
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     STATION 10 — CENTRIFUGATION
+========================== -->
+
+<div id="centrifugationLab" style="display: none;">
+
+    <h1>STATION 10</h1>
+    <h2>CENTRIFUGATION</h2>
+<h2>WHAT IS CENTRIFUGATION</h2>
+    <p>
+        Centrifugation is a technique used to separate substances
+        based on differences in density by spinning
+        a mixture rapidly.
+    </p>
+
+    <div class="mixture">
+        🧪 + ⚙️
+    </div>
+
+    <h2>MIXTURE</h2>
+    <p>Solid particles suspended in a liquid</p>
+
+    <h2>HOW IT WORKS</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>01 — LOAD</h3>
+            <p>
+                The mixture is placed into tubes
+                inside the centrifuge.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>02 — SPIN</h3>
+            <p>
+                The centrifuge spins rapidly, causing
+                denser particles to move outward and settle.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>03 — SEPARATE</h3>
+            <p>
+                The denser solid forms a sediment while
+                the liquid remains above it.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>APPARATUS</h2>
+
+    <div class="apparatus">
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">⚙️</div>
+            <h3>Centrifuge</h3>
+            <p>
+                Spins the mixture rapidly to separate
+                substances according to density.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🧪</div>
+            <h3>Centrifuge Tubes</h3>
+            <p>
+                Hold the mixture while it is being spun.
+            </p>
+        </div>
+
+        <div class="apparatus-item">
+            <div class="apparatus-icon">🧫</div>
+            <h3>Container</h3>
+            <p>
+                Holds the separated material after
+                centrifugation.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>RESULT</h2>
+
+    <div class="result-box">
+
+        <div>
+            <h3>BEFORE</h3>
+            <p>Suspension of solid particles in a liquid</p>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div>
+            <h3>AFTER</h3>
+            <p>Solid sediment + liquid above it</p>
+        </div>
+
+    </div>
+<p> Used for blood separation and laboratories <p>
+    <h2>MISSION</h2>
+
+    <p>
+        Which technique uses rapid spinning to separate
+        substances based on density?
+    </p>
+
+    <button type="button" id="centrifugationAnswer">
+        CENTRIFUGATION
+    </button>
+
+    <button type="button" id="centrifugationWrongAnswer">
+        CHROMATOGRAPHY
+    </button>
+
+    <p id="centrifugationResult"></p>
+
+    <div id="centrifugationMissionComplete" style="display: none;">
+
+        <h2>MISSION COMPLETE</h2>
+
+        <button type="button" id="centrifugationBackToMap">
+            BACK TO LAB MAP
+        </button>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
