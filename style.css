@@ -166,3 +166,16 @@ button:hover {
     font-size: 35px;
     font-weight: bold;
 }
+.apparatus-diagram {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.apparatus-diagram img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
